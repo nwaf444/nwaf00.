@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var prefix = "k";
 var adminprefix = 'k'
 
-const developers = ["243071076853219328"]
+const developers = ["545972327947567105"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -24,7 +24,7 @@ client.on('message', message => {
       message.channel.send(`**🎵   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'sets')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/nayquila");
+    client.user.setGame(argresult, "https://www.twitch.tv/hadyalaa");
       message.channel.send(`**💜**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
